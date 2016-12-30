@@ -1,0 +1,184 @@
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sushi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playball' type='text/css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Pacifico' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    
+    <link rel="stylesheet" href="{% static 'css/main.min.css' %}" media="screen" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootflat/2.0.4/css/bootflat.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" type="text/css">
+    
+    <link rel="icon" href="{% static 'favicon-1.ico' %}" type="image/x-icon">
+    <script src="https://use.fontawesome.com/c7295ae472.js"></script>
+    <style>
+        #map {
+            height: 100%;
+            margin-top: -90px;
+            //margin-bottom: -65px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- ============ Navbar Section  ================= -->
+                {% include "nav.html" %}
+    <!-- ============ End Navbar Section  ============= -->
+
+    
+    <div id="top" class="starter_container bg">
+        <div class="follow_container">
+            <div class="col-md-6 col-md-offset-3">
+                <h2 class="top-title">Ben Gui Sushi</h2>
+                <h2 class="white second-title">"Best sushi in Roanoke, Hands Down"</h2>
+                
+<!-- messages -->
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+              <li{% if message.tags %} class="alert alert-{{ message.tags }}"{% endif %}>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+<!-- end messages -->
+                <hr>
+                    <a class="btn btn-custom btn-lg" id="newsbutton" role="button">Signup For Our Newsletter</a>
+            </div>
+        </div>
+    </div>
+    <!-- ============ About Us ============= -->
+    <section id="story" class="description_content">
+        <div id="about" class="text-content container">
+            <div class="col-md-6">
+                <h1>About us</h1>
+                <div class="fa fa-cutlery fa-2x"></div>
+                <p class="desc-text">We're Proud To Say, <em>Voted Best Sushi In Roanoke The Last 9 Years</em> By Roanoker Magazine. We're A Relaxed Japanese Restaurant Offering 5-Course Sushi &amp; Sake Tasting Menus, Plus à La Carte Ordering. Founded In 2007, We&#39;ve Been Doing Things Right Ever Since.</p>
+                <p class="desc-text"><section id="location">Located at 4357 Starkey Rd, Roanoke, Va 24018.</section></p>
+                <p class="desc-text"><i class="fa fa-phone-square" id="phone-glyph" aria-hidden="true"></i><b id="location">Call Us (540) 772-6888</b></p>
+            </div>
+            <div class="col-md-6">
+                <div class="img-section">
+                    <img src="{% static 'img/sushifb10.jpeg' %}" width="250" height="220">
+                    <img src="{% static 'img/sushifb2.jpeg' %}" width="250" height="220">
+                    <div class="img-section-space"></div>
+                    <img src="{% static 'img/sushifb1.jpeg' %}" width="250" height="220">
+                    <img src="{% static 'img/sushi1.jpg' %}" width="250" height="220">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ============ end About Us ============= -->
+    <hr class="featurette-divider">
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe src="https://www.youtube.com/embed/rC41Sngt4wU" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h1 class="text-center text-lead" id="myh1">Meet Our Chef</h1>
+                    <div id="glyph" class="fa fa-cutlery fa-2x"></div>
+                    <p class="desc-text"><em>Ben Gui Chen</em> Has Been Making Sushi In The Roanoke Valley For The Last 10 years. Ben Creates
+                        <mark>Unique Sushi Items With Quality Fish And Influences From Around The World</mark>. Ben Believes The Best Meal He Can Create Is One He Creates Personally! Please Join Us For <em>5 Courses Of Sushi Items</em> And Optional Saki For Every Course. We Also Server <em>Gluten Free</em> Options!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="featurette-divider">
+    <div class="section" id="menu">
+        <div class="container" id="menu-container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1 class="text-center text-lead" id="myh12">Why Sushi?</h1>
+                    <div id="glyph2" class="fa fa-cutlery fa-2x"></div>
+                    <p class="desc-text">Sushi Not Only Tastes Great, It's Great For You! Sushi Is Full Of <em>Nutrients</em>, Including
+                        <mark>Vitamins And Minerals</mark> Such As <em>Iodine</em> Not To Mention Protein. It's Rich In <em>Omega-3 Fatty Acids</em> Which Have Many Amazing Health Benefits. Even The Condiments Are Good For You. Soy Sauce Aids In <em>Digestion</em> And Kills Infection Causing Colon Bacillus. <em>Ginger</em> <em>Has A Myriad Of Health Promoting Assets.</em></p>
+                </div>
+                <div class="col-md-6">
+                    <div class="embed-responsive embed-responsive-4by3">
+                        <iframe src="https://www.youtube.com/embed/N8-1VhHZXPE" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container-fluid">
+        
+        <div id="below_map_row" class="row" style="height: 320px;">
+        <div class="col-sm-6">
+            <div id="email_icon"><i class="icon ion-email"></i></div>
+            <p id="newsletter_signup">Signup For Our Newsletter</p>
+        </div>
+        <div class="col-sm-3">
+            <form action="{% url 'customer:send_email' %}" method="post" id="email_form">
+                    {% csrf_token %}                    
+                    {{ form|crispy }}
+                <input class='btn btn-success btn-lg btn-block' type='submit' value='Submit'></input>
+            </form>
+        </div>
+    </div><!--end row-->
+    
+    
+    
+        <div id="above_map_row" class="row" style="height: 320px;">
+            <div class="col-sm-6">
+                <p>Visit Us. . .</p>
+                <p style="color:white;">4357 Starkey Rd Roanoke, VA 24018</p>
+            </div>
+            <div class="col-sm-6">
+                <p>Call Us. . .</p>
+                <p style="color:white;">1-540-772-6888</p>
+            </div>
+        </div><!--end row-->    
+    </div><!--end container-->
+        
+        
+        
+        
+    <div class="embed-responsive embed-responsive-16by9">
+        <div id="map" class="embed-responsive-item"></div>
+    </div>
+    
+    <!-- ============ Footer Section  ================= -->
+            {% include "footer.html" %}
+    <!-- ============ End Footer Section  ============= -->
+    
+    <script>
+        var map;
+
+        function initMap() {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: 37.228494
+                    , lng: -79.982947
+                }
+                , zoom: 18
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8rHmxZETt_Z5y2p5DK3djT6vEx9MIbAE&callback=initMap"></script>    
+    <script type="text/javascript" src="{% static 'js/site.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/email.js' %}"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>			  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="{% static 'js/scroll.js' %}"></script>
+</body>
+
+</html>
