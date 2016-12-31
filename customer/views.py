@@ -24,7 +24,7 @@ def send_email(request):
             sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('SENDGRID_API_KEY'))
             to_email = Email('ckava3@gmail.com')
             subject = 'Newsletter'
-            from_email = Email('app61403983@heroku.com')
+            from_email = Email('app61490599@heroku.com')
             content = Content("text/plain", "Hello, Email!")
             mail = Mail(from_email, subject, to_email, content)
             response = sg.client.mail.send.post(request_body=mail.get())
