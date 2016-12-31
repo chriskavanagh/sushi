@@ -7,7 +7,7 @@ from .forms import ContactForm
 from .models import Customer
 
 from sendgrid.helpers.mail import *
-import sendgrid
+from sendgrid import *
 import os
 
 # Create your views here.
