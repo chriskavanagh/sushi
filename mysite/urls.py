@@ -22,8 +22,8 @@ from . import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.home, name='home'),
-    #url(r'^customer/', include('customer.urls', namespace='customer')),
-    #url(r'^newsletter/', include('newsletter.urls')),
+    url(r'^customer/', include('customer.urls', namespace='customer')),
+    url(r'^newsletter/', include('newsletter.urls')),
     url(r'^tinymce/', include('tinymce.urls')),
 ]
 
