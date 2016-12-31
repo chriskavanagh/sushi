@@ -22,8 +22,8 @@ def send_email(request):
             data = {'message': '{} is now registered for our newsletter'.format(email)}
             Customer.objects.create(email=email)
             sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('SENDGRID_API_KEY'))
-            to_email = Email('ckava3@gmail.com')
-            subject = 'Newsletter'
+            to_email = Email(email)
+            subject = 'Ben-Gui Sushi Newsletter'
             from_email = Email('app61490599@heroku.com')
             content = Content("text/plain", "Hello, Email!")
             mail = Mail(from_email, subject, to_email, content)
