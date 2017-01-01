@@ -5,10 +5,10 @@ from django.http import JsonResponse
 from django.conf import settings
 from .forms import ContactForm
 from .models import Customer
-
 from sendgrid.helpers.mail import *
 from sendgrid import *
 import os
+
 
 # Create your views here.
 def send_email(request):
@@ -16,13 +16,13 @@ def send_email(request):
         email = request.POST.get('email')
         cust_email = Customer.objects.filter(email=email).count()
         if cust_email:
-            data = {'message': '{} is already registered'.format(email)}
+            data = {'message': '{} is already registered.'.format(email)}
             return JsonResponse(data)
         else:
-            data = {'message': '{} is now registered for our newsletter'.format(email)}
+            data = {'message': '{} is now registered for our newsletter!'.format(email)}
             Customer.objects.create(email=email)
             sg = sendgrid.SendGridAPIClient(apikey=os.environ.get('SENDGRID_API_KEY'))
-            to_email = Email(email)
+            to_email = Email(email)    # may have to put email in quotes, 'email'!!!
             subject = 'Ben-Gui Sushi Newsletter'
             from_email = Email('app61490599@heroku.com')
             content = Content("text/plain", "Hello, Email!")
@@ -37,6 +37,7 @@ def send_email(request):
 
 
 
+##View For local development##
 
 # def send_email(request):
 #     if request.is_ajax() and request.POST:

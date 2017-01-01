@@ -21,6 +21,6 @@ $(function(){
 
 function searchSuccess(data, textStatus, jqXHR)
 {    
-    alert(data.message);
+    swal(data.message);
 }
 

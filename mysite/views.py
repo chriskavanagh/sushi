@@ -1,19 +1,15 @@
-from django.contrib import messages
-from customer.forms import ContactForm
-from django.core.urlresolvers import reverse
-from django.conf import settings
 from django.shortcuts import render, redirect, get_object_or_404
-from django.core.mail import send_mail
-from django.shortcuts import render, redirect
-from django.contrib import messages
-from customer.forms import ContactForm
-from django.core.mail import send_mail
-from django.conf import settings
 from django.http import Http404, HttpResponse
+from django.shortcuts import render, redirect
+from django.core.urlresolvers import reverse
+from django.core.mail import send_mail
+from customer.forms import ContactForm
+from django.contrib import messages
+from django.conf import settings
 import json
 
 
-
+# Create your views here.
 def home(request):
     form = ContactForm()
     return render(request, 'home.html', {'form': form})
