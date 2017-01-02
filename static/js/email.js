@@ -21,6 +21,6 @@ $(function(){
 
 function searchSuccess(data, textStatus, jqXHR)
 {    
-    swal(data.message);
+    swal({title:"Newletter", text:data.message, animation: "slide-from-top"});
 }
 
