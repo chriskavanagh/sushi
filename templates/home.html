@@ -20,8 +20,8 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootflat/2.0.4/css/bootflat.css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" type="text/css">
     
     <link rel="icon" href="{% static 'favicon-1.ico' %}" type="image/x-icon">
@@ -67,9 +67,9 @@
             <div class="col-md-6">
                 <h1>About us</h1>
                 <div class="fa fa-cutlery fa-2x"></div>
-                <p class="desc-text">We're Proud To Say, <em>Voted Best Sushi In Roanoke The Last 9 Years</em> By Roanoker Magazine. We're A Relaxed Japanese Restaurant Offering 5-Course Sushi &amp; Sake Tasting Menus, Plus à La Carte Ordering. Founded In 2007, We&#39;ve Been Doing Things Right Ever Since.</p>
+                <p class="desc-text">We're Proud To Say,&emsp; <em>Voted Best Sushi In Roanoke The Last 9 Years</em> By Roanoker Magazine. We're A Relaxed Japanese Restaurant Offering 5-Course Sushi &amp; Sake Tasting Menus, Plus à La Carte Ordering. Founded In 2007, We&#39;ve Been Doing Things Right Ever Since.</p>
                 <p class="desc-text"><section id="location">Located at 4357 Starkey Rd, Roanoke, Va 24018.</section></p>
-                <p class="desc-text"><i class="fa fa-phone-square" id="phone-glyph" aria-hidden="true"></i><b id="location">Call Us (540) 772-6888</b></p>
+                <p class="desc-text"><i class="fa fa-phone-square" id="phone-glyph" aria-hidden="true"></i><b id="location">Call Us (540) 772-6888</b><div id="trophy_icon"><i class="icon ion-trophy"></i></div></p>
             </div>
             <div class="col-md-6">
                 <div class="img-section">
@@ -96,7 +96,7 @@
                     <h1 class="text-center text-lead" id="myh1">Meet Our Chef</h1>
                     <div id="glyph" class="fa fa-cutlery fa-2x"></div>
                     <p class="desc-text"><em>Ben Gui Chen</em> Has Been Making Sushi In The Roanoke Valley For The Last 10 years. Ben Creates
-                        <mark>Unique Sushi Items With Quality Fish And Influences From Around The World</mark>. Ben Believes The Best Meal He Can Create Is One He Creates Personally! Please Join Us For <em>5 Courses Of Sushi Items</em> And Optional Saki For Every Course. We Also Server <em>Gluten Free</em> Options!</p>
+                        <mark>Unique Sushi Items With Quality Fish And Influences From Around The World</mark>. Ben Believes The Best Meal He Can Create Is One He Creates Personally! Please Join Us For <em>5 Courses Of Sushi Items</em> And Optional Saki For Every Course. We Also Server <em>Gluten Free</em> Options!<i class="icon-thumbs-up-alt"></i></p>
                 </div>
             </div>
         </div>
@@ -109,7 +109,7 @@
                     <h1 class="text-center text-lead" id="myh12">Why Sushi?</h1>
                     <div id="glyph2" class="fa fa-cutlery fa-2x"></div>
                     <p class="desc-text">Sushi Not Only Tastes Great, It's Great For You! Sushi Is Full Of <em>Nutrients</em>, Including
-                        <mark>Vitamins And Minerals</mark> Such As <em>Iodine</em> Not To Mention Protein. It's Rich In <em>Omega-3 Fatty Acids</em> Which Have Many Amazing Health Benefits. Even The Condiments Are Good For You. Soy Sauce Aids In <em>Digestion</em> And Kills Infection Causing Colon Bacillus. <em>Ginger</em> <em>Has A Myriad Of Health Promoting Assets.</em></p>
+                        <mark>Vitamins And Minerals</mark> Such As <em>Iodine</em> Not To Mention Protein. It's Rich In <em>Omega-3 Fatty Acids</em> Which Have Many Amazing Health Benefits. Even The Condiments Are Good For You. Soy Sauce Aids In <em>Digestion</em> And Kills Infection Causing Colon Bacillus. <em>Ginger</em> <em>Has A Myriad Of Health Promoting Assets.</em><i class="icon-heart-empty"></i></p>
                 </div>
                 <div class="col-md-6">
                     <div class="embed-responsive embed-responsive-4by3">
@@ -126,9 +126,10 @@
         <div class="col-sm-6">
             <div id="email_icon"><i class="icon ion-email"></i></div>
             <p id="newsletter_signup">Signup For Our Newsletter</p>
+            <div id="thumbs_icon"><i class="icon ion-email"></i></div>
         </div>
         <div class="col-sm-3">
-            <form action="{% url 'customer:send_email' %}" method="post" id="email_form">
+            <form action="{% url 'customer:send_email' %}" method="POST" id="email_form">
                     {% csrf_token %}                    
                     {{ form|crispy }}
                 <input class='btn btn-success btn-lg btn-block' type='submit' value='Submit'></input>
