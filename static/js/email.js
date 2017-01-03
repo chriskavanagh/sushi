@@ -21,6 +21,6 @@ $(function(){
 
 function searchSuccess(data, textStatus, jqXHR)
 {    
-    swal({title:"Newletter", text:data.message, animation: "slide-from-top"});
+    swal({title:"Ben-Gui Newletter", text:data.message, animation: "slide-from-top"});
 }
 
