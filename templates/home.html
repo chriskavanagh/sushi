@@ -127,7 +127,7 @@
             <div id="email_icon"><i class="icon ion-email"></i></div>
             <p id="newsletter_signup">Signup For Our Newsletter</p>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-3" >
             <form action="{% url 'customer:send_email' %}" method="POST" id="email_form">
                     {% csrf_token %}                    
                     {{ form|crispy }}

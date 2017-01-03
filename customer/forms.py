@@ -11,7 +11,8 @@ class ContactForm(forms.ModelForm):
 		fields = ['email']
 		widgets = {
 			'email': forms.EmailInput(
-			 	attrs={'placeholder':'Your Email Address', 'id': 'email_text'}
+			 	attrs={'placeholder':'Your Email Address', 'id': 'email_text',
+			 									 'class':'form-control input-lg'}
 			 	)
 			 }
 
