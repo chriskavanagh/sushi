@@ -617,6 +617,7 @@ em {
 
 #below_map_row {
     background-color: grey;
+    background-image: url('../img/cream-pixels.png');
     margin-top: 90px;
 }
 
@@ -646,8 +647,8 @@ em {
 
 #above_map_row {
 	background-color: black;
-	//margin-top: 90px;
-	//background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #666666 0%, #777777 10%, #444444 100%) repeat scroll 0 0;
+    background-color: rgb(0, 10, 38);
+    background-image: url('../img/cream-pixels.png');
 }
 
 #above_map_row p {
