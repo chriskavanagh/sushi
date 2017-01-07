@@ -7,7 +7,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Sushi</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playball' type='text/css'>
@@ -64,14 +64,14 @@
     <!-- ============ About Us ============= -->
     <section id="story" class="description_content">
         <div id="about" class="text-content container">
-            <div class="col-md-6">
+            <div class="col-sm-6">
                 <h1>About us</h1>
                 <div class="fa fa-cutlery fa-2x"></div>
-                <p class="desc-text">We're Proud To Say,&emsp; <em>Voted Best Sushi In Roanoke The Last 9 Years</em> By Roanoker Magazine. We're A Relaxed Japanese Restaurant Offering 5-Course Sushi &amp; Sake Tasting Menus, Plus à La Carte Ordering. Founded In 2007, We&#39;ve Been Doing Things Right Ever Since.</p>
+                <p class="desc-text">We're Proud To Say, <em>Voted Best Sushi In Roanoke The Last 9 Years</em> By Roanoker Magazine. We're A Relaxed Japanese Restaurant Offering 5-Course Sushi &amp; Sake Tasting Menus, Plus à La Carte Ordering. Founded In 2007, We&#39;ve Been Doing Things Right Ever Since.<i class="icon ion-trophy" id="trophy"></i></p>
                 <p class="desc-text"><section id="location">Located at 4357 Starkey Rd, Roanoke, Va 24018.</section></p>
-                <p class="desc-text"><i class="fa fa-phone-square" id="phone-glyph" aria-hidden="true"></i><b id="location">Call Us (540) 772-6888</b><div id="trophy_icon"><i class="icon ion-trophy"></i></div></p>
+            <p class="desc-text"><i class="fa fa-phone-square" id="phone-glyph" aria-hidden="true"></i><b id="location">Call Us (540) 772-6888</b></p>
             </div>
-            <div class="col-md-6">
+            <div class="col-sm-6">
                 <div class="img-section">
                     <img src="{% static 'img/sushifb10.jpeg' %}" width="250" height="220">
                     <img src="{% static 'img/sushifb2.jpeg' %}" width="250" height="220">
@@ -122,23 +122,30 @@
     
     <div class="container-fluid">
         
-        <div id="below_map_row" class="row" style="height: 320px;">
-        <div class="col-sm-6">
-            <div id="email_icon"><i class="icon ion-email"></i></div>
-            <p id="newsletter_signup">Signup For Our Newsletter</p>
+        <div class="row" id="below_map_row">
+        <div class="col-md-7">
+             <!--combine this into p below, try float:left -->
+            <!--<div id="email_icon"><i class="icon ion-email"></i></div>-->
+            <p id="newsletter_signup"><i id="email_icon" class="icon ion-email"></i>Signup For Our Newsletter</p>
         </div>
-        <div class="col-sm-3" >
+        <div class="col-md-5 form-group-lg">
             <form action="{% url 'customer:send_email' %}" method="POST" id="email_form">
-                    {% csrf_token %}                    
-                    {{ form|crispy }}
-                <input class='btn btn-success btn-lg btn-block' type='submit' value='Submit'></input>
-            </form>
+                {% csrf_token %}
+			<div class="input-group input-group-lg">
+				<input type="email" class="form-control" name="email" id="email_text" placeholder="Email Address. . ."/>
+				<span class="input-group-btn">
+					<button class="btn btn-success" type="submit">Subscribe!</button>
+				</span>
+			</div>
+		  </form>
         </div>
     </div><!--end row-->
     
+
     
     
-        <div id="above_map_row" class="row" style="height: 320px;">
+        
+        <div class="row" id="above_map_row">
             <div class="col-sm-6">
                 <p>Visit Us. . .</p>
                 <p style="color:white;">4357 Starkey Rd Roanoke, VA 24018</p>
@@ -147,7 +154,8 @@
                 <p>Call Us. . .</p>
                 <p style="color:white;">1-540-772-6888</p>
             </div>
-        </div><!--end row-->    
+        </div><!--end row-->
+
     </div><!--end container-->
         
         

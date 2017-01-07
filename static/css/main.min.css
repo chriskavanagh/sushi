@@ -78,21 +78,22 @@ h1{font-size:32px;font-weight:900;width:280px;letter-spacing:.040em;border:1px s
 #skill{padding-bottom:20px}
 #glyph{//position:absolute;//left:30px;margin-left:219px}
 #glyph2{margin-left:260px}
-#phone-glyph{padding-right:5px;font-size:25px}
+#phone-glyph{padding-right:5px;font-size:28px}
 #location{color:#900;text-align:left;font-weight:bold;font-size:20px}
 h1{background-color:#d1c095;color:#967adc;//background-color:#e6e6e6}
 #myh1{margin-left:95px}
 #myh12{margin-left:145px}
 em{color:#900}
 .white.second-title{color:#d1c095}
-#below_map_row{background-color:grey;background-image:url('../img/cream-pixels.png');margin-top:90px}
-#newsletter_signup{padding-top:75px;padding-left:150px;color:#63c85d;text-align:center;font-size:33px;letter-spacing:.09em}
-#email_icon{position:relative;top:135px;left:240px;font-size:50px;color:white}
-#below_map_row form{padding-top:115px;padding-left:50px}
-#above_map_row{background-color:black;background-color:#000a26;background-image:url('../img/cream-pixels.png')}
+#below_map_row{background-color:grey;background-attachment:fixed;background-image:url('../img/cream-pixels.png');margin-top:90px}
+#newsletter_signup{padding-top:110px;padding-bottom:120px;padding-left:150px;color:#63c85d;text-align:center;font-size:33px;letter-spacing:.09em;//position:relative}
+#email_icon{position:relative;padding-right:5px;top:7px;font-size:50px;color:white;//float:left}
+#thumbs_icon{position:absolute;top:135px;right:111px;font-size:50px;color:white}
+#below_map_row form{padding-top:129px;//padding-left:110px;padding-right:50px}
+#above_map_row{background-attachment:fixed;background-color:#000a26;background-image:url('../img/cream-pixels.png');padding-bottom:65px}
 #above_map_row p{color:#63c85d;padding-top:50px;padding-left:150px;font-size:33px;text-align:center;letter-spacing:.09em;font-weight:bold;position:relative;top:30px}
-.btn-custom{background-color:hsl(41,85%,35%)!important;background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#efb73d",endColorstr="#a5750d");background-image:-khtml-gradient(linear,left top,left bottom,from(#efb73d),to(#a5750d));background-image:-moz-linear-gradient(top,#efb73d,#a5750d);background-image:-ms-linear-gradient(top,#efb73d,#a5750d);background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#efb73d),color-stop(100%,#a5750d));background-image:-webkit-linear-gradient(top,#efb73d,#a5750d);background-image:-o-linear-gradient(top,#efb73d,#a5750d);background-image:linear-gradient(#efb73d,#a5750d);border-color:#a5750d #a5750d hsl(41,85%,29%);color:#fff!important;text-shadow:0 -1px 0 rgba(0,0,0,0.39);-webkit-font-smoothing:antialiased;position:relative;top:35px}
-input:focus{background:#DADEF4}
-#trophy_icon{ position:absolute;bottom:240px;right:341px;font-size: 18px;}
-.icon-heart-empty{padding-left: 7px;}
-.icon-thumbs-up-alt{padding-left: 7px;}
+.btn-custom{background-color:hsl(41,85%,35%)!important;background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#efb73d",endColorstr="#a5750d");background-image:-khtml-gradient(linear,left top,left bottom,from(#efb73d),to(#a5750d));background-image:-moz-linear-gradient(top,#efb73d,#a5750d);background-image:-ms-linear-gradient(top,#efb73d,#a5750d);background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#efb73d),color-stop(100%,#a5750d));background-image:-webkit-linear-gradient(top,#efb73d,#a5750d);background-image:-o-linear-gradient(top,#efb73d,#a5750d);background-image:linear-gradient(#efb73d,#a5750d);border-color:#a5750d #a5750d hsl(41,85%,29%);color:#fff!important;text-shadow:0 -1px 0 rgba(0,0,0,0.39);-webkit-font-smoothing:antialiased;position:relative;top:40px}
+input:focus{background:#dadef4}
+#trophy{//position:absolute;//bottom:240px;//right:341px;//font-size:18px;padding-left:7px}
+.icon-heart-empty{padding-left:7px}
+.icon-thumbs-up-alt{padding-left:7px}
