@@ -11,6 +11,9 @@ $(function(){
 	$('#nav-contact').click(function() {
 		$.scrollTo($('#above_map_row'), 2000);
 	});
+	$('#nav-menu').click(function() {
+		$.scrollTo($('#theMenu'), 2000);
+	});
  });
  
  
