@@ -12,7 +12,8 @@ import json
 # Create your views here.
 def home(request):
     form = ContactForm()
-    return render(request, 'home.html', {'form': form})
+    #return render(request, 'home.html', {'form': form})
+    return render(request, 'home.html', {})
 
 
 def success(request):
