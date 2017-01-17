@@ -488,7 +488,8 @@ MEDIA QUERIE DESKTOP
 }
 
 .footer-basic p {
-    color: white;    
+    color: #FFDAB9;
+    font-weight:500;    
 }
 
 .footer-basic h4 {

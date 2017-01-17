@@ -66,7 +66,7 @@ h1{font-size:32px;font-weight:900;width:280px;letter-spacing:.040em;border:1px s
 .featurette-divider{margin-top:80px;margin-bottom:80px;width:75%;border-top:3px solid #d1c095}
 .glyphicon{position:relative;top:3px;display:inline-block;font-family:'Glyphicons Halflings';font-style:normal;font-weight:normal;line-height:3;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
 .footer-basic{padding:110px 0;background-color:#dcdcdc;color:#f6bb42;margin-top:-125px;background:rgba(0,0,0,0) linear-gradient(to bottom,#666 0,#777 10%,#444 100%) repeat scroll 0 0}
-.footer-basic p{color:white}
+.footer-basic p{color:#FFDAB9;font-weight:500}
 .footer-basic h4{font-size:26px}
 .footer-basic ul{padding:0;list-style:none;text-align:center;font-size:18px;line-height:1.6;margin-bottom:0}
 .footer-basic li{padding:0 10px}
