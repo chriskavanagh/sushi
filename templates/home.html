@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootflat/2.0.4/css/bootflat.css">
-    <!--<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">-->
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" type="text/css">
     
@@ -36,7 +35,7 @@
     </style>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#main-navbar">
             <!-- ============ Navbar Section  ================= -->
                         {% include "nav.html" %}
             <!-- ============ End Navbar Section  ============= -->
@@ -127,14 +126,14 @@
     
     
     
-    <div class="container-fluid">        
+    <div class="container-fluid" id="contact">        
         <div class="row" id="below_map_row">
-        <div class="col-md-7 col-xs-12">
+        <div class="col-sm-7 col-xs-12">
              <!--combine this into p below, try float:left -->
             <!--<div id="email_icon"><i class="icon ion-email"></i></div>-->
             <p id="newsletter_signup"><i id="email_icon" class="icon ion-email"></i>Signup For Our Newsletter</p>
         </div>
-        <div class="col-md-5 col-xs-12 form-group-lg">
+        <div class="col-sm-5 col-xs-12 form-group-lg">
             <form action="{% url 'customer:send_email' %}" method="POST" id="email_form">
                 {% csrf_token %}
 			<div class="input-group input-group-lg">
@@ -145,9 +144,7 @@
 			</div>
 		  </form>
         </div>
-    </div><!--end row-->    
-    
-
+    </div><!--end row-->
         
         <div class="row" id="above_map_row">
             <div class="col-sm-6 col-xs-12">
@@ -160,9 +157,7 @@
             </div>
         </div><!--end row-->
 
-    </div><!--end container-->
-        
-        
+    </div><!--end container-->       
         
         
     <div class="embed-responsive embed-responsive-16by9">
