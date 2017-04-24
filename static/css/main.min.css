@@ -17,27 +17,24 @@ div#bs-example-navbar-collapse-1{height:368px;overflow:hidden;text-align:center;
 nav{background:#1e1e1e!important;font-size:18px;color:white!important}
 li{color:white!important;word-spacing:5px!important}
 #navcutlery{padding-left:8px;font-size:25px}
-.starter_container{margin-top:45px;padding:0;min-width:100%;height:100%;background:url('../img/wall_web.jpg') no-repeat center center;background-size:cover;text-align:center;background-position:center}
-.follow_container{width:100%;position:absolute;top:35%;text-align:center}
+.starter_container{background:url('../img/new_wall_web.jpg') no-repeat center center;margin-top:45px;padding-bottom:52.5%;//padding:0;min-height:100%;height:100%;text-align:center;background-position:center;-o-background-size:cover;-moz-background-size:cover;-webkit-background-size:cover;background-size:cover}
+.follow_container{/width:100%;/position:absolute;/top:35%;text-align:center}
 .starter_follow{display:inline-block;width:80%;z-index:1;margin:0 auto;padding:0}
-.top-title{color:white;font-family:'Playball',cursive;font-size:120px;font-weight:400;padding-top:180px}
-.second-title{font-weight:lighter;font-size:30px;//font-size:1.6vw;//this would be in viewport width(=30px) font-style:italic;text-transform:capitalize}
+.top-title{color:white;font-family:'Playball',cursive;font-size:7.5em;font-weight:400;margin-top:580px}
+.second-title{font-weight:lighter;font-size:1.875em;//font-size:1.6vw;//this would be in viewport width(=30px) font-style:italic;text-transform:capitalize}
 .white{color:white}
 .description_content{padding:50px 0;width:100%;background:#fff;margin:0 auto 0 auto;z-index:99;position:relative;background:white;text-align:center}
 .description_body{margin:45px auto;max-width:300px}
-h1{font-size:28px;font-weight:900;width:225px;letter-spacing:.040em;border:8px solid #2f2e2f;display:inline-block;padding:7px 16px;margin:0}
+h1{font-size:1.75em;font-weight:900;width:225px;letter-spacing:.040em;border:8px solid #2f2e2f;display:inline-block;padding:7px 16px;margin:0}
 .picture_content{display:none}
 div.fa{display:block;padding:30px 0 25px 0}
 div .fa-2x{padding:30px 0 25px 0}
 h1{text-transform:capitalize}
 .navbar-default{border:0!important}
-@media(max-width:660px){.top-title{font-size:67px}
-.second-title{font-size:21px}
+@media(max-width:660px){.top-title{font-size:4.1875em}
+.second-title{font-size:1.3125em}
 .background_content h1{width:80%;font-size:2.5em}
-}@media(min-width:400px){.starter_container{height:100%}
-.background_content h1{top:33%}
-}@media(min-width:660px){.starter_container{height:100%}
-.navbar-default{height:70px;padding-top:10px}
+}.navbar-default{height:70px;padding-top:10px}
 nav li{padding-right:-15px}
 .navbar-brand{font-family:'Pacifico',cursive;font-size:34px!important;text-decoration:none;color:white!important}
 nav{display:block;position:fixed;width:100%;height:55px;z-index:100;margin:0;padding:0;background-color:#1e1e1e;text-align:center}
@@ -94,20 +91,24 @@ em{color:#900}
 .white.second-title{color:#d1c095}
 #below_map_row{background-color:grey;background-attachment:fixed;background-image:url('../img/cream-pixels.png');margin-top:90px}
 #newsletter_signup{padding-top:110px;padding-bottom:120px;padding-left:150px;color:#63c85d;text-align:center;font-size:33px;letter-spacing:.09em;//position:relative}
-#email_icon{position:relative;padding-right:5px;top:7px;font-size:50px;color:white;//float:left}
+@media screen and (min-width:350px) and (max-width:760px){#newsletter_signup{padding-right:90px}
+}@media screen and (min-width:760px) and (max-width:980px){#newsletter_signup{padding-right:70px}
+}#email_icon{position:relative;padding-right:5px;top:7px;font-size:50px;color:white;//float:left}
 #thumbs_icon{position:absolute;top:135px;right:111px;font-size:50px;color:white}
 #below_map_row form{padding-top:129px;//padding-left:110px;padding-right:50px}
 #above_map_row{background-attachment:fixed;background-color:#000a26;background-image:url('../img/cream-pixels.png');padding-bottom:110px}
 #above_map_row p{color:#63c85d;padding-top:50px;padding-left:150px;font-size:33px;text-align:center;letter-spacing:.09em;font-weight:bold;position:relative;top:30px}
-.btn-custom{background-color:hsl(41,85%,35%)!important;background-repeat:repeat-x;filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#efb73d",endColorstr="#a5750d");background-image:-khtml-gradient(linear,left top,left bottom,from(#efb73d),to(#a5750d));background-image:-moz-linear-gradient(top,#efb73d,#a5750d);background-image:-ms-linear-gradient(top,#efb73d,#a5750d);background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#efb73d),color-stop(100%,#a5750d));background-image:-webkit-linear-gradient(top,#efb73d,#a5750d);background-image:-o-linear-gradient(top,#efb73d,#a5750d);background-image:linear-gradient(#efb73d,#a5750d);border-color:#a5750d #a5750d hsl(41,85%,29%);color:#fff!important;text-shadow:0 -1px 0 rgba(0,0,0,0.39);-webkit-font-smoothing:antialiased;position:relative;top:25px}
+.btn-custom{background-color:hsl(41,85%,35%)!important;/background-repeat:repeat-x;/filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#efb73d",endColorstr="#a5750d");/background-image:-khtml-gradient(linear,left top,left bottom,from(#efb73d),to(#a5750d));/background-image:-moz-linear-gradient(top,#efb73d,#a5750d);background-image:-ms-linear-gradient(top,#efb73d,#a5750d);/background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0%,#efb73d),color-stop(100%,#a5750d));/background-image:-webkit-linear-gradient(top,#efb73d,#a5750d);background-image:-o-linear-gradient(top,#efb73d,#a5750d);/background-image:linear-gradient(#efb73d,#a5750d);border-color:#a5750d #a5750d hsl(41,85%,29%);color:#fff!important;/text-shadow:0 -1px 0 rgba(0,0,0,0.39);/-webkit-font-smoothing:antialiased}
+@media screen and (min-width:760px) and (max-width:980px){.btn-custom{font-size:12px}
+}.overlay{background-color:black;padding-bottom:10px;padding-right:20px}
 input:focus{background:#dadef4}
 #trophy{padding-left:7px}
 .icon-heart-empty{padding-left:7px}
 .icon-thumbs-up-alt{padding-left:7px}
 #restaurant-menu{padding:90px 0 60px 0}
 #restaurant-menu .section-title{background:#444 url(../img/sushi-chef.jpeg) center center no-repeat fixed;background-size:cover;height:100%;min-height:100%;margin-bottom:90px}
-.section-title .overlay{padding:180px 0}
-.section-title .overlay hr{width:85px;border-top:3px solid #8eb640;text-align:center;margin:0 auto 40px}
+.section-title .overlay-pic{padding:180px 0}
+.section-title .overlay-pic hr{width:85px;border-top:3px solid #8eb640;text-align:center;margin:0 auto 40px}
 #theMenu{font-family:'Raleway',sans-serif;border:0;margin-bottom:1px}
 #restaurant-menu h3{font-family:'Raleway',sans-serif;padding:10px 0;text-transform:uppercase}
 #restaurant-menu .menu-section hr{margin:0 auto 0 -5;width:85px;border-top:3px solid #8eb640;text-align:center}
