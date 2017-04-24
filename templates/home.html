@@ -15,16 +15,16 @@
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Playball' type='text/css'>
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Pacifico' type='text/css'>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    
+
     <link rel="stylesheet" href="{% static 'css/main.css' %}" media="screen" type="text/css">
-	<link rel="stylesheet" href="{% static 'dist/sweetalert.css' %}" media="screen" type="text/css">
+	  <link rel="stylesheet" href="{% static 'dist/sweetalert.css' %}" media="screen" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootflat/2.0.4/css/bootflat.css">
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,800,700,400italic,600italic,700italic,800italic,300italic" type="text/css">
-    
+
     <link rel="icon" href="{% static 'favicon-1.ico' %}" type="image/x-icon">
     <script src="https://use.fontawesome.com/c7295ae472.js"></script>
     <style>
@@ -35,18 +35,6 @@
     </style>
 </head>
 
-<body data-spy="scroll" data-target="#main-navbar">
-            <!-- ============ Navbar Section  ================= -->
-                        {% include "nav.html" %}
-            <!-- ============ End Navbar Section  ============= -->
-
-    
-    <div id="top" class="starter_container bg">
-        <div class="follow_container">
-            <div class="col-md-6 col-md-offset-3">
-                <h2 class="top-title">Ben Gui Sushi</h2>
-                <h2 class="white second-title">"Best sushi in Roanoke, Hands Down"</h2>
-                
 <!-- messages -->
     {% if messages %}
         <ul class="messages">
@@ -56,11 +44,29 @@
         </ul>
     {% endif %}
 <!-- end messages -->
-                <hr>
-                    <a class="btn btn-custom btn-lg" id="newsbutton" role="button">Signup For Our Newsletter</a>
+
+<body data-spy="scroll" data-target="#main-navbar">
+            <!-- ============ Navbar Section  ================= -->
+                        {% include "nav.html" %}
+            <!-- ============ End Navbar Section  ============= -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="starter_container bg">
+        <div class="follow_container">
+            <div class="col-md-6 col-md-offset-3">
+                <!--<h2 class="top-title">Ben Gui Sushi</h2>-->
+                <!--<h2 class="white second-title">"Best sushi in Roanoke, Hands Down"</h2>-->
+                <!--<hr>-->
             </div>
         </div>
     </div>
+    </div>
+</div>
+
+<div class="overlay text-center">
+  <a class="btn btn-custom btn-lg" id="newsbutton" role="button">Signup For Our Newsletter</a>
+</div>
     <!-- ============ About Us ============= -->
     <section id="story" class="description_content">
         <div id="about" class="text-content container">
@@ -119,14 +125,14 @@
             </div>
         </div>
     </div>
-    
+
                 <!-- ============ Menu Section  ================= -->
                             {% include "menu.html" %}
                 <!-- ============ Menu Section  ================= -->
-    
-    
-    
-    <div class="container-fluid" id="contact">        
+
+
+
+    <div class="container-fluid" id="contact">
         <div class="row" id="below_map_row">
         <div class="col-sm-7 col-xs-12">
              <!--combine this into p below, try float:left -->
@@ -145,7 +151,7 @@
 		  </form>
         </div>
     </div><!--end row-->
-        
+
         <div class="row" id="above_map_row">
             <div class="col-sm-6 col-xs-12">
                 <p>Visit Us. . .</p>
@@ -157,17 +163,17 @@
             </div>
         </div><!--end row-->
 
-    </div><!--end container-->       
-        
-        
+    </div><!--end container-->
+
+
     <div class="embed-responsive embed-responsive-16by9">
         <div id="map" class="embed-responsive-item"></div>
     </div>
-    
+
                     <!-- ============ Footer Section  ================= -->
                                 {% include "footer.html" %}
                     <!-- ============ End Footer Section  ============= -->
-    
+
     <script>
         var map;
 
@@ -181,14 +187,14 @@
             });
         }
     </script>
-    
+
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC8rHmxZETt_Z5y2p5DK3djT6vEx9MIbAE&callback=initMap"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="{% static 'js/site.min.js' %}"></script>
 	<script type="text/javascript" src="{% static 'dist/sweetalert.min.js' %}"></script>
-    <script type="text/javascript" src="{% static 'js/email.js' %}"></script>    
+    <script type="text/javascript" src="{% static 'js/email.js' %}"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!--<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>-->			  
+    <!--<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>-->
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
     <script type="text/javascript" src="{% static 'js/scroll.js' %}"></script>
