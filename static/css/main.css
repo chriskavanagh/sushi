@@ -856,6 +856,7 @@ input:focus {
 	margin-top: -26px;
 }
 
+/* button size scaling / gets smaller as screen size does */
 @media (max-width: 768px) {
   #newsbutton {
     font-size:11px;
